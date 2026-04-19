@@ -71,7 +71,11 @@ class ProcessBuilder {
             args = args.concat(this.constructModList(modObj.fMods))
         }
 
-        logger.info('Launch Arguments:', args)
+        // Hide access token
+        const loggableArgs = [...args]
+        loggableArgs[loggableArgs.findIndex(x => x === this.authUser.accessToken)] = '**********'
+
+        logger.info('Launch Arguments:', loggableArgs)
 
         const child = child_process.spawn(ConfigManager.getJavaExecutable(this.server.rawServer.id), args, {
             cwd: this.gameDir,
@@ -92,7 +96,7 @@ class ProcessBuilder {
         child.stderr.on('data', (data) => {
             data.trim().split('\n').forEach(x => console.log(`\x1b[31m[Minecraft]\x1b[0m ${x}`))
         })
-        child.on('close', (code, signal) => {
+        child.on('close', (code) => {
             logger.info('Exited with code', code)
             fs.remove(tempNativePath, (err) => {
                 if(err){
@@ -230,7 +234,7 @@ class ProcessBuilder {
                     return true
                 }
             }
-        } catch (err) {
+        } catch (_err) {
             // We know old forge versions follow this format.
             // Error must be caused by newer version.
         }
@@ -368,7 +372,7 @@ class ProcessBuilder {
 
         // Java Arguments
         if(process.platform === 'darwin'){
-            args.push('-Xdock:name=CookieLauncher')
+            args.push('-Xdock:name=CosmicLauncher')
             args.push('-Xdock:icon=' + path.join(__dirname, '..', 'images', 'minecraft.icns'))
         }
         args.push('-Xmx' + ConfigManager.getMaxRAM(this.server.rawServer.id))
@@ -521,7 +525,7 @@ class ProcessBuilder {
                             val = args[i].replace(argDiscovery, tempNativePath)
                             break
                         case 'launcher_name':
-                            val = args[i].replace(argDiscovery, 'Cookie-Launcher')
+                            val = args[i].replace(argDiscovery, 'Cosmic-Launcher')
                             break
                         case 'launcher_version':
                             val = args[i].replace(argDiscovery, this.launcherVersion)

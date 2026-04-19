@@ -2626,7 +2626,8 @@ input:checked + .toggleSwitchSlider:before {
 #newsArticleDate,
 #newsArticleAuthor {
     display: inline-block;
-    font-size: 12px;
+    /*12 cosmic*/
+    font-size: 10px;
     padding: 0px 5px;
     font-weight: bold;
     border-radius: 2px;
@@ -2672,7 +2673,8 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Article content styles. */
 #newsArticleContentScrollable {
-    font-size: 14px;
+    /*14 cosmic*/
+    font-size: 12px;
     overflow-y: scroll;
     height: 100%;
     padding: 0px 15px 0px 15px;
@@ -2855,20 +2857,25 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Logo image. */
 #image_seal {
-    height: 76px;
+    /*76 cosmic*/
+    height: 70px;
     width: auto;
     position: relative;
-    border: 3px solid white;
+    /*3 cosmic*/
+    border: 2px solid white;
     box-sizing: border-box;
     border-radius: 50%;
+    /* cosmic
     box-shadow: 0px 0px 14px 0px black;
+    */
 }
 
 /* Logo container styles. */
 #image_seal_container {
     position: relative;
-    height: 76px;
-    width: 76px;
+    /*76 76 cosmic*/
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     margin-top: 50px;
 }
@@ -2909,8 +2916,10 @@ input:checked + .toggleSwitchSlider:before {
     padding: 2px;
     position: absolute;
     z-index: 1;
-    top: 120%;
-    left: -12.5px;
+    /* 120 cosmic*/
+    top: 115%;
+    /* 12.5 cosmic*/
+    left: -17.5px;
     font-family: 'SUIT-Medium';
     font-size: 12px;
     transition: visibility 0s linear 0.25s, opacity 0.25s ease;
@@ -3014,7 +3023,8 @@ input:checked + .toggleSwitchSlider:before {
 
 /* User profile name text. */
 #user_text {
-    font-size: 14px;
+    /*14 cosmic*/
+    font-size: 12px;
     min-width: 135px;
     font-weight: 900;
     letter-spacing: 1px;
@@ -3030,7 +3040,7 @@ input:checked + .toggleSwitchSlider:before {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 16px;
+    margin-top: 25px;
     height: calc(100% - 95px);
     width: 70px;
     align-items: center;
@@ -3047,38 +3057,35 @@ input:checked + .toggleSwitchSlider:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 36px;
-}
-
-/* SVG가 div를 무시하는 설정을 사용하여 개별 gap 지정 */
-.extraSpacing1 {
-    height: 42px;
+    /36 cosmic*/
+    height: 27px;
 }
 
 /* Divider bar between the external and internal icons. */
 .mediaDivider {
-    height: 2px;
-    width: 18px;
+    /*2 cosmic*/
+    height: 1px;
+    /*18 cosmic*/
+    width: 14px;
     background: rgb(255, 255, 255);
     margin: 10px 0px;
-    margin-top: 16px
 }
 
 /* Social media icon shared styles. */
 .mediaSVG {
     fill: #ffffff;
     height: 12px;
-    /* transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out; */
-    transition-duration: 0.5s;
+    transition: 0.25s ease;
     cursor: pointer;
-    height: 18px;
+    height: 17px;
     width: 25px;
-    filter: drop-shadow(0px 0px 4px rgb(0 0 0 / 100%));
+    /* cosmic option */
+    padding: 0 0 10 0;
 }
 .mediaSVG:hover,
 .mediaURL:focus .mediaSVG,
 .mediaSVG:active {
-    transform: scale(1.5);
+    height: 20px;
 }
 
 /* Social media URL shared styles. */
@@ -3103,7 +3110,9 @@ input:checked + .toggleSwitchSlider:before {
 /* Settings icon colors. */
 #settingsSVG {
     stroke: #ffffff;
+    /*15->20 cosmic*/
     height: 20px;
+    padding: 0;
 }
 .mediaButton:hover #settingsSVG,
 .mediaButton:focus #settingsSVG,
@@ -3144,25 +3153,14 @@ input:checked + .toggleSwitchSlider:before {
     opacity: 1;
     transition-delay:0s;
 }
-/* Homepage icon colors. */
-#homeSVG:hover,
-#homeURL:focus #homeSVG {
-    fill: #ffffff;
-}
 
-/* Map icon colors. */
-#mapSVG:hover,
-#mapURL:focus #mapSVG {
-    fill: #53b953;
+/* X icon colors. */
+#xSVG:hover,
+#xURL:focus #xSVG {
+    fill: #000000;
 }
-
-/* Twitter icon colors. */
-#twitterSVG:hover,
-#twitterURL:focus #twitterSVG {
-    fill: #1da1f2;
-}
-#twitterSVG:active {
-    fill: #1b8dd4;
+#xSVG:active {
+    fill: #090909;
 }
 
 /* Instagram icon colors. */
@@ -3193,13 +3191,22 @@ input:checked + .toggleSwitchSlider:before {
     fill: #657ac4;
 }
 
-/* Github icon colors. */
-#githubSVG path {
-    transition: fill 0.5s ease-in-out;
+/* Map icon colors. */
+#mapSVG:hover,
+#mapURL:focus #mapSVG {
+    fill: #5cc865;
 }
-#githubSVG:hover path,
-#githubURL:focus #githubSVG path {
+#mapSVG:active {
+    fill: #5cc865;
+}
+
+/* GitHub icon colors. */
+#gitSVG:hover,
+#linkURL:focus #gitSVG {
     fill: #000000;
+}
+#gitSVG:active {
+    fill: #090909;
 }
 
 /*******************************************************************************
@@ -3210,7 +3217,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Style for a general label on the bottom of the landing view. */
 .bot_label {
-    font-size: 12px;
+    font-size: 9px;
     letter-spacing: 1px;
     font-weight: bold;
     text-shadow: 0px 0px 0px #bebcbb;
@@ -3232,14 +3239,15 @@ input:checked + .toggleSwitchSlider:before {
 /* Maintains maximum width on the status bar. */
 #server_status_wrapper {
     display: inline-flex;
-    width: 124px;
-    justify-content: space-evenly;
+    /*124, justify-content: space-evenly cosmic*/
+    width: 75px;
 }
 
 /* Span which displays the player count of the selected server. */
 #player_count {
     color: #949494;
-    font-size: 12px;
+    /*12 cosmic*/
+    font-size: 8px;
     font-weight: 900;
     text-shadow: 0px 0px 20px #949494;
     margin-left: 10px;
@@ -3406,7 +3414,8 @@ input:checked + .toggleSwitchSlider:before {
     font-weight: 900;
     letter-spacing: 2px;
     text-shadow: 0px 0px 0px #bebcbb;
-    font-size: 13px;
+    /*13 cosmic*/
+    font-size: 11px;
     line-height: 30px;
     display: flex;
     transition: 0.25s ease;

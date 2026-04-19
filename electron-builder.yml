@@ -1,14 +1,14 @@
-appId: 'cookielauncher'
-productName: 'Cookie Launcher'
-artifactName: 'Cookie-Launcher-setup-${version}.${ext}'
+appId: 'cosmiclauncher'
+productName: 'Cosmic Launcher'
+artifactName: 'Cosmic-Launcher-setup-${version}.${ext}'
 
-copyright: 'Copyright © 2018-2025 Daniel Scalzi, Mxxndawn'
+copyright: 'Copyright © 2018-2025 Daniel Scalzi, mxxndawn'
 
 asar: true
 compression: 'maximum'
 
 files:
-  - '!{dist,.gitignore,.vscode,docs,dev-app-update.yml,.nvmrc,.eslintrc.json}'
+  - '!{dist,.gitignore,.vscode,docs,dev-app-update.yml,.nvmrc,eslint.config.mjs}'
 
 extraResources:
   - 'libraries'
@@ -33,7 +33,7 @@ mac:
       arch:
         - 'x64'
         - 'arm64'
-  artifactName: 'Cookie-Launcher-setup-${version}-${arch}.${ext}'
+  artifactName: 'Cosmic-Launcher-setup-${version}-${arch}.${ext}'
   category: 'public.app-category.games'
 
 # Linux Configuration
