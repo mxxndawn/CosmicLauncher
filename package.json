@@ -1,13 +1,13 @@
 {
   "name": "cookielauncher",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "productName": "Cookie Launcher",
   "description": "Modded Minecraft Launcher",
-  "author": "Daniel Scalzi (https://github.com/dscalzi/), Mxxndawn (https://github.com/mxxndawn/",
+  "author": "Daniel Scalzi (https://github.com/dscalzi/), moondawn (https://github.com/mxxndawn/",
   "license": "UNLICENSED",
   "homepage": "https://github.com/mxxndawn/CookieLauncher",
   "bugs": {
-    "url": "https://github.com/mxxndanw/CookieLauncher/issues"
+    "url": "https://github.com/mxxndawn/CookieLauncher/issues"
   },
   "private": true,
   "main": "index.js",
