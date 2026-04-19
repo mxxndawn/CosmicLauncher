@@ -29,6 +29,36 @@
                     </div>
                     <div class="mediaDivider"></div>
                     <div id="externalMedia">
+                        <!-- Cosmic 신규 코드 시작 -->
+                        <div class="mediaContainer">
+                            <a href="<%- lang('landing.mediaLinkURL') %>" class="mediaURL" id="linkURL">
+                                <svg id="linkSVG" class="mediaSVG" viewBox="0 0 16 16">
+                                    <g>
+                                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                                        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="mediaContainer">
+                            <a href="<%- lang('landing.mediaGitHubURL') %>" class="mediaURL" id="linkURL">
+                                <svg id="gitSVG" class="mediaSVG" viewBox="0 0 16 16">
+                                    <g>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="mediaContainer">
+                            <a href="<%- lang('landing.mediaMapURL') %>" class="mediaURL" id="linkURL">
+                                <svg id="mapSVG" class="mediaSVG" viewBox="0 0 16 16">
+                                    <g>
+                                        <path d="M15.5 8.516a7.5 7.5 0 1 1-9.462-7.24A1 1 0 0 1 7 0h2a1 1 0 0 1 .962 1.276 7.5 7.5 0 0 1 5.538 7.24m-3.61-3.905L6.94 7.439 4.11 12.39l4.95-2.828 2.828-4.95z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- GitHub 링크 제거, 필요 시 복구
                         <div class="mediaContainer">
                             <a href="<%- lang('landing.mediaGitHubURL') %>" class="mediaURL" id="linkURL">
                                 <svg id="linkSVG" class="mediaSVG" viewBox="35.34 34.3575 70.68 68.71500">
@@ -39,6 +69,8 @@
                                 </svg>
                             </a>
                         </div>
+                        기존 GitHub 링크 제거, 필요 시 복구 -->
+                        <!-- X 링크 제거, 필요 시 복구
                         <div class="mediaContainer">
                             <a href="<%- lang('landing.mediaXURL') %>" class="mediaURL" id="xURL">
                                 <svg id="xSVG" class="mediaSVG" viewBox="0 0 275 275">
@@ -48,6 +80,8 @@
                                 </svg>
                             </a>
                         </div>
+                        X 링크 제거, 필요 시 복구 -->
+                        <!-- 인스타그램 링크 제거, 필요 시 복구
                         <div class="mediaContainer">
                             <a href="<%- lang('landing.mediaInstagramURL') %>" class="mediaURL" id="instagramURL">
                                 <svg id="instagramSVG" class="mediaSVG" viewBox="0 0 5040 5040">
@@ -68,6 +102,8 @@
                                 </svg>
                             </a>
                         </div>
+                        인스타 링크 제거, 필요 시 복구 -->
+                        <!-- 유튜브 링크 제거, 필요 시 복구
                         <div class="mediaContainer">
                             <a href="<%- lang('landing.mediaYouTubeURL') %>" class="mediaURL" id="youtubeURL">
                                 <svg id="youtubeSVG" class="mediaSVG" viewBox="35.34 34.3575 70.68 68.71500">
@@ -77,6 +113,7 @@
                                 </svg>
                             </a>
                         </div>
+                        유튜브 링크 제거, 필요 시 복구 -->
                         <div class="mediaContainer">
                             <a href="<%- lang('landing.mediaDiscordURL') %>" class="mediaURL" id="discordURL">
                                 <svg id="discordSVG" class="mediaSVG" viewBox="35.34 34.3575 70.68 68.71500">
