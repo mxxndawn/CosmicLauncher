@@ -3077,8 +3077,10 @@ input:checked + .toggleSwitchSlider:before {
     height: 12px;
     transition: 0.25s ease;
     cursor: pointer;
-    height: 12px;
+    height: 17px;
     width: 25px;
+    /* cosmic option */
+    padding: 0 0 10 0;
 }
 .mediaSVG:hover,
 .mediaURL:focus .mediaSVG,
@@ -3108,8 +3110,9 @@ input:checked + .toggleSwitchSlider:before {
 /* Settings icon colors. */
 #settingsSVG {
     stroke: #ffffff;
-    /*20 cosmic*/
-    height: 15px;
+    /*15->20 cosmic*/
+    height: 20px;
+    padding: 0;
 }
 .mediaButton:hover #settingsSVG,
 .mediaButton:focus #settingsSVG,
@@ -3186,6 +3189,24 @@ input:checked + .toggleSwitchSlider:before {
 }
 #discordSVG:active {
     fill: #657ac4;
+}
+
+/* Map icon colors. */
+#mapSVG:hover,
+#mapURL:focus #mapSVG {
+    fill: #5cc865;
+}
+#mapSVG:active {
+    fill: #5cc865;
+}
+
+/* GitHub icon colors. */
+#gitSVG:hover,
+#linkURL:focus #gitSVG {
+    fill: #000000;
+}
+#gitSVG:active {
+    fill: #090909;
 }
 
 /*******************************************************************************
