@@ -1,13 +1,13 @@
 {
-  "name": "cookielauncher",
-  "version": "2.0.0",
-  "productName": "Cookie Launcher",
+  "name": "cosmiclauncher",
+  "version": "2.2.1-cosmic.1.0.0",
+  "productName": "Cosmic Launcher",
   "description": "Modded Minecraft Launcher",
-  "author": "Daniel Scalzi (https://github.com/dscalzi/), moondawn (https://github.com/mxxndawn/",
+  "author": "Daniel Scalzi (https://github.com/dscalzi/), Moondawn (https://github.com/mxxndawn/",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/mxxndawn/CookieLauncher",
+  "homepage": "https://github.com/mxxndawn/CosmicLauncher",
   "bugs": {
-    "url": "https://github.com/mxxndawn/CookieLauncher/issues"
+    "url": "https://github.com/mxxndawn/CosmicLauncher/issues"
   },
   "private": true,
   "main": "index.js",
@@ -47,6 +47,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mxxndawn/CookieLauncher.git"
+    "url": "git+https://github.com/mxxndawn/CosmicLauncher.git"
   }
 }
