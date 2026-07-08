@@ -5,6 +5,7 @@ title = "Cosmic Launcher"
 
 [ejs.landing]
 mediaLinkURL = "https://mc.cosmicstudio.space"
+mediaGuideURL = "https://mc.cosmicstudio.space/guide/"
 mediaGitHubURL = "https://github.com/mxxndawn/CosmicLauncher"
 mediaMapURL = "https://map.cosmicstudio.space"
 mediaXURL = "#"
