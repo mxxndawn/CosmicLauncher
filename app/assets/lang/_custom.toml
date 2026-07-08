@@ -4,13 +4,14 @@
 title = "Cosmic Launcher"
 
 [ejs.landing]
-mediaLinkURL = "https://cosmicstudio.space"
+mediaLinkURL = "https://mc.cosmicstudio.space"
+mediaGuideURL = "https://mc.cosmicstudio.space/guide/"
 mediaGitHubURL = "https://github.com/mxxndawn/CosmicLauncher"
 mediaMapURL = "https://map.cosmicstudio.space"
 mediaXURL = "#"
 mediaInstagramURL = "#"
 mediaYouTubeURL = "#"
-mediaDiscordURL = "https://discord.gg/hGAAwGwwwH"
+mediaDiscordURL = "https://discord.gg/pu4ujK64cr"
 
 [ejs.settings]
 sourceGithubLink = "https://github.com/mxxndawn/CosmicLauncher"
